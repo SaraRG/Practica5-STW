@@ -1,0 +1,12 @@
+%html
+    %head
+        %title Shortened urls
+        %link{ :rel => "stylesheet", :type => "text/css", :href => "/style.css" }
+    %body
+        %h1 Shortened urls
+        %form(action="/" method="POST")
+            %label(for="url")Introduzca la URL
+            %input(type="text" name="url" id="url" accesskey="s")
+            %input(type="submit" value="Acortar")
+        %h3
+            =yield
